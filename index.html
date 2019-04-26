@@ -45,15 +45,21 @@
 		</section>
 		<section class="search__panel">
 			<div class="search__bar">
-				<div cass="search__bar-three-container">
+				<div cass="search__bar-container">
 					<form class="big__selection">
-						<input type = "text" value="Rodzaj" class="big__selector"></input>
-						<label class="selector__label">Rodzaj</p>
-						<!-- //zamienic div na input p na label i wszystko ubrać w Forma// -->
+						<label for="rodzaj">Rodzaj</label>
+						<input list= "big__selector" name= "big__selector" class="big__selector">
+							<datalist id="big__selector">
+								<option value="Mieszkanie">Mieszkanie</option>
+								<option value="Lokal">Lokal</option>
+								<option value="Garaż">Garaż</option>
+							</datalist>
+						</input>
 					</form>
-					<form>
-						<input list="ppp__selection" name="pietra">
-							<datalist id="ppp__selection">
+					<form class="small__selector">
+						<label for="od">od</label>
+						<input list="flor__selection" name="flors">
+							<datalist id="flor__selection">
 								<option  value="- 2 piętro" class="small__small__selector">- 2 piętro</option>
 								<option  value="- 1 piętro" class="small__small__selector">- 1 piętro</option>
 								<option  value="Parter" class="small__small__selector">Parter</option>
@@ -67,57 +73,151 @@
 							</datalist>
 						</input>	
 					</form>
-					
-					<select class="small__selection">
-						<option  value="do" class="small__small__selector">do</option>
-						<option  value="- 2 piętro " class="small__small__selector">- 2 piętro</option>
-						<option  value="- 1 piętro" class="small__small__selector">- 1 piętro</option>
-						<option  value="Parter" class="small__small__selector">Parter</option>
-						<option  value="1 piętro" class="small__small__selector">1 piętro</option>
-						<option  value="2 piętro" class="small__small__selector">2 piętro</option>
-						<option  value="3 piętro" class="small__small__selector">3 piętro</option>
-						<option  value="4 piętro" class="small__small__selector">4 piętro</option>
-						<option  value="5 piętro" class="small__small__selector">5 piętro</option>
-						<option  value="6 piętro" class="small__small__selector">6 piętro</option>
-						<option  value="7 piętro" class="small__small__selector">7 piętro</option>
-					</select>
-					<label class="selector__label">Piętro</label>
-					<div class="small__selection">do</div>
-					<!-- //zamienic div na input p na label i wszystko ubrać w Forma// -->
+					<form class="small__selector">
+						<label for="do">do</label>
+						<input list="flor__selection" name="flors"></input>	
+					</form>
 				</div>
-				<div class="search__bar-three-container">
-					<div class="big__selection">
-							<div class="big__selector">Inwestycja</div>
-							<p class="selector__label">Inwestycja</p>
-					<!-- //zamienic div na input p na label i wszystko ubrać w Forma// -->		
-					</div>
-					<div class="small__selection">
-							<div class="small__small__selector">od</div>
-							<p class="selector__label">Liczba pokoi</p>
-					</div>
-					<div classct="small__seleion">do</div>
-					<!-- //zamienic div na input p na label i wszystko ubrać w Forma// -->
+				<div class="search__bar-container">
+					<form class="big__selection">
+						<label for="rodzaj">Inwestycja</label>
+						<input list= "big__selector-invest" name= "big__selector" class="big__selector">
+							<datalist id="big__selector-invest">
+								<option value="Osiedle Plażowa">Osiedle Plażowa</option>
+								<option value="Apartamenty Alto">Apartamenty Alto</option>
+								<option value="Nowa Wygoda">Nowa Wygoda</option>
+								<option value="Wysoki Stoczek Apartamenty">Wysoki Stoczek Apartamenty</option>
+								<option value="Aleja Tysiąclecia Państwa Polskiego 54A">Aleja Tysiąclecia Państwa Polskiego 54A</option>
+								<option value="Willa Musica">Willa Musica</option>
+								<option value="Bitwy Białostockiej 35A">Bitwy Białostockiej 35A</option>
+								<option value="Kawaleryjska">Kawaleryjska</option>
+								<option value="Krakowska 7">Krakowska 7</option>
+								<option value="Stalowa">Stalowa</option>
+							</datalist>
+						</input>
+					</form>
+					<form class="small__selector">
+						<label for="od">od</label>
+						<input list="rooms" name="rooms">
+							<datalist id="rooms">
+								<option  value="1 pokój" class="small__small__selector">1 pokój</option>
+								<option  value="2 pokoje" class="small__small__selector">2 pokoje</option>
+								<option  value="3 pokoje" class="small__small__selector">3 pokoje</option>
+								<option  value="4 pokoje" class="small__small__selector">4 pokoje</option>
+								<option  value="5 pokoi" class="small__small__selector">5 pokoi</option>
+							</datalist>
+						</input>	
+					</form>
+					<form class="small__selector">
+						<label for="do">do</label>
+						<input list="rooms" name="rooms">
+							<datalist id="ppp__selection">
+						</input>
+					</form>
 				</div>
-				<div class="search__bar-fourth-countainer">
-					<div class="small__selection">
-							<div class="small__small__selector">od</div>
-							<p class="selector__label">Cena</p>
-					</div>
-					<div class="small__selection">do</div>
-					<div class="small__selection">
-							<div class="small__small__selector">od</div>
-					</div>
-					<div class="small__selection">
-							<div class="small__small__selector">do</div>
-					</div>
+				<div class="search__bar-container">
+					<form class="small__selector">
+						<label for="rodzaj">Cena</label>
+						<label for="od">od</label>
+						<input list="price" name="price">
+							<datalist id="price">
+								<option  value="50000" class="small__small__selector">50000</option>
+								<option  value="100000" class="small__small__selector">100000</option>
+								<option  value="150000" class="small__small__selector">150000</option>
+								<option  value="200000" class="small__small__selector">200000</option>
+								<option  value="250000" class="small__small__selector">250000</option>
+								<option  value="300000" class="small__small__selector">300000</option>
+								<option  value="350000" class="small__small__selector">350000</option>
+								<option  value="400000" class="small__small__selector">400000</option>
+								<option  value="450000" class="small__small__selector">450000</option>
+								<option  value="500000" class="small__small__selector">500000</option>
+								<option  value="750000" class="small__small__selector">750000</option>
+								<option  value="1000000" class="small__small__selector">1000000</option>
+								<option  value="1500000" class="small__small__selector">1500000</option>
+							</datalist>
+						</input>
+					</form>
+					<form class="small__selector">
+						<label for="do">do</label>
+						<input list="price" name="price">
+							<datalist id="price"></datalist>
+						</input>
+					</form>
+					<form class="small__selector">
+						<label for="Metraż">Metraż</label>
+						<label for="od">od</label>
+						<input list="mesure" name="mesure">
+							<datalist id="mesure">
+								<option  value="1m2" class="small__small__selector">1m2</option>
+								<option  value="25m2" class="small__small__selector">100000</option>
+								<option  value="40m2" class="small__small__selector">150000</option>
+								<option  value="50m2" class="small__small__selector">200000</option>
+								<option  value="60m2" class="small__small__selector">250000</option>
+								<option  value="70m2" class="small__small__selector">300000</option>
+								<option  value="80m2" class="small__small__selector">350000</option>
+								<option  value="400000" class="small__small__selector">400000</option>
+								<option  value="450000" class="small__small__selector">450000</option>
+								<option  value="500000" class="small__small__selector">500000</option>
+								<option  value="750000" class="small__small__selector">750000</option>
+								<option  value="1000000" class="small__small__selector">1000000</option>
+								<option  value="1500000" class="small__small__selector">1500000</option>
+							</datalist>
+						</input>
+					</form>
+					<form class="small__selector">
+							<label for="do">do</label>
+							<input list="mesure" name="mesure">
+								<datalist id="mesure"></datalist>
+							</input>
+						</form>
 				</div>
-				<div class="search__bar-other-container">
-					<div class="checkbox"></div>
-					<button class="find__button"></button>
+				<div class="search__bar-container">
+					<input type="checkbox">
+					<button class="find__button">Szukaj</button>
 				</div>
 			</div>
 		</section>
-		
+		<section class="new__inwest">
+			<header>
+				<div></div>
+				<div></div>
+			</header>
+			<div class="properties">
+				<div>
+					<div></div>
+					<div></div>
+				</div>
+				<div>
+					<div></div>
+					<div></div>
+				</div>
+				<div>
+					<div></div>
+					<div></div>
+				</div>
+				<div>
+					<div></div>
+					<div></div>
+				</div>
+				<div>
+					<div></div>
+					<div></div>
+				</div>
+				<div>
+					<div></div>
+					<div></div>
+				</div>
+				<div>
+					<div></div>
+					<div></div>
+				</div>
+				<div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+
+		</section>
 	</body>
 
 </html>
