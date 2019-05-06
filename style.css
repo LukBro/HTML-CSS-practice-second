@@ -199,14 +199,22 @@ html {
  
 }
 .product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+
     
 }
-.product__container {
-
+.product__container-four {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
 }
 
 .product__item {
-
+  padding: 0 0 25px;
 }
 .product__picture {
     
