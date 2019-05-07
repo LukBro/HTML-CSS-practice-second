@@ -32,25 +32,25 @@ html {
   }
   
 
-  .navigation {
+  .asw {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  .first__navigation {
+  .contact {
     display: flex;
     justify-content: center;
     border-bottom: 1px grey solid;
     padding: 5px 0;
   }
 
-  .navigation__container {
+  .contact__container {
     width: 90%;
     display: flex;
     justify-content: flex-end;
   }
-  .contact {
+  .contact__list {
     display: flex;
     font-size: 12px;
     font-family: sans-serif;
@@ -59,14 +59,15 @@ html {
     justify-content: space-between;
   }
 
-  .secondary__navigation {
+  .navigation {
     display: flex;
     justify-content: center;
     padding: 30px 0;
     
+    
   }
 
-  .secondary__navigation-container {
+  .navigation-container {
     width: 90%;
     display: flex;
     align-items: center;
@@ -79,7 +80,7 @@ html {
     width: 30%;
   }
 
-  .secondary__navigation-list {
+  .navigation-list {
     justify-content: space-between;
     display: flex;
     width: 60%;
@@ -90,7 +91,7 @@ html {
     width: 70%;
     justify-content: space-between;
   }
-  .secondary__navigation-items{
+  .navigation-items{
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -104,7 +105,6 @@ html {
   .small__selector {
     position: relative;
     display: block;
-    /* margin-top: 1.5em; */
   }
   
   label {
@@ -186,18 +186,30 @@ html {
   }
 
   .find__button {
+    font-weight: 700;
     width: 100%;
     height: 30px;
+    background-color: red;
+    color: white;
   }
 
 
-.main__product-paragraf {
-  
-  }
-  
-.main__product-paragraph-text {
- 
-}
+
+ .product__header {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  border-bottom: 1px grey solid;
+  margin-bottom: 15px;
+ }
+
+ .product__header-text {
+  text-decoration: none;
+  opacity: .6;
+  color: inherit;
+ }
+
 .product {
   display: flex;
   justify-content: center;
@@ -223,17 +235,23 @@ html {
 .product__view-figure {
   display: flex;
   flex-direction: column;
-  margin: 0 10px;
+  width: 23%;
 }
 .product__view-image.img {
   
 }
 .product__view-figcaption {
- position: relative;
- top: -26px;
+font-weight: 700;
+padding-left: 10px;
+display: flex;
+align-items: center;
+padding: 5px;
+position: relative;
+ top: -28px;
  color: white;
  background-color: rgb(0, 0, 0, 0.3);
-font-weight: 700;
-height: 25px;
-padding-left: 10px;
+}
+.position {
+  position: relative;
+  top: 10px;
 }

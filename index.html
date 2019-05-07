@@ -9,10 +9,9 @@
 			<title>Document</title>
 	</head>
 	<body>
-		<div class="navigation">
-			<div class="first__navigation">
-				<div class="navigation__container">
-					<ul class="contact">
+			<div class="contact">
+				<div class="contact__container">
+					<ul class="contact__list">
 						<li class="contact__item">Sprzedaż mieszkań</li>
 						<li class="contact__item">(85)741-50-87</li>
 						<li class="contact__item">mieszkania@kombinatbud.pl</li>
@@ -20,246 +19,232 @@
 					</ul>
 				</div>
 			</div>
-			<div class="secondary__navigation">
-				<div class="secondary__navigation-container">
-						<div class="company__logo">
-							<figure class="company__logo-image">
-								<img src="images/logo.png" alt="kombinatbud" class="logo">
-							</figure>
-						</div>
-						<div class="secondary__navigation-list">
-							<ul class="secondary__navigation-items">
-								<li class="nav__link">
-									<a class="nav__link-item" href="#">Strona Główna</a>
-								</li>
-								<li class="nav__link">
-									<a class="nav__link-item" href="#">Oferta</a>
-								</li>
-								<li class="nav__link">
-									<a class="nav__link-item" href="#">Promocja</a>
-								</li>
-								<li class="nav__link">
-									<a class="nav__link-item" href="#">O firmie</a>
-								</li>
-								<li class="nav__link">
-										<a class="nav__link-item" href="#">Dla klientów</a>
-								</li>
-								<li class="nav__link">
-										<a class="nav__link-item" href="#">Kontakt</a>
-								</li>
-							</ul>
-						</div>
+			<div class="navigation">
+				<div class="navigation-container">
+					<div class="company__logo">
+						<figure class="company__logo-image">
+							<img src="images/logo.png" alt="kombinatbud" class="logo">
+						</figure>
+					</div>
+					<nav class="navigation-list">
+						<ul class="navigation-items">
+							<li class="nav__link">
+								<a class="nav__link-item" href="#">Strona Główna</a>
+							</lif>
+							<li class="nav__link">
+								<a class="nav__link-item" href="#">Oferta</a>
+							</li>
+							<li class="nav__link">
+								<a class="nav__link-item" href="#">Promocja</a>
+							</li>
+							<li class="nav__link">
+								<a class="nav__link-item" href="#">O firmie</a>
+							</li>
+							<li class="nav__link">
+									<a class="nav__link-item" href="#">Dla klientów</a>
+							</li>
+							<li class="nav__link">
+									<a class="nav__link-item" href="#">Kontakt</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</div>
+			<div class="welcome__picture">
+				<figure>
+					<img class="welcome__picture-main" src="images/welcome__picture.jpg" alt="pwiefjwopeirhe">
+				</figure>
 			</div>
-		</div>
-		<div class="welcome__picture">
-			<figure>
-				<img class="welcome__picture-main" src="images/welcome__picture.jpg" alt="pwiefjwopeirhe">
-			</figure>
-		</div>
-		<article class="search__bar">
-			<form class="form__selection">
-				<div class="firstline__group">
-					<div class="group__form">
-						<label  for="papa">Rodzaj</label>
-						<input id="papa" list= "big__selector" name= "big__selector"  placeholder="Rodzaj" class="big__selector" >
-							<datalist id="big__selector">
-								<option value="Mieszkanie">Mieszkanie</option>
-								<option value="Lokal">Lokal</option>
-								<option value="Garaż">Garaż</option>
-							</datalist>
-						</input>
-					</div>
-					<div class="group__form-florex">
-						<label for="total">Piętro</label>
-						<div class="column">
-								<input id="total" list="flor__selection" name="flors" class="flor__selection" placeholder="Od">
-								<datalist id="flor__selection">
-									<option  value="- 2 piętro" class="small__small__selector">- 2 piętro</option>
-									<option  value="- 1 piętro" class="small__small__selector">- 1 piętro</option>
-									<option  value="Parter" class="small__small__selector">Parter</option>
-									<option  value="1 piętro" class="small__small__selector">1 piętro</option>
-									<option  value="2 piętro" class="small__small__selector">2 piętro</option>
-									<option  value="3 piętro" class="small__small__selector">3 piętro</option>
-									<option  value="4 piętro" class="small__small__selector">4 piętro</option>
-									<option  value="5 piętro" class="small__small__selector">5 piętro</option>
-									<option  value="6 piętro" class="small__small__selector">6 piętro</option>
-									<option  value="7 piętro" class="small__small__selector">7 piętro</option>
+			<article class="search__bar">
+				<form class="form__selection">
+					<div class="firstline__group">
+						<div class="group__form">
+							<label  for="papa">Rodzaj</label>
+							<input id="papa" list= "big__selector" name= "big__selector"  placeholder="Rodzaj" class="big__selector" >
+								<datalist id="big__selector">
+									<option value="Mieszkanie">Mieszkanie</option>
+									<option value="Lokal">Lokal</option>
+									<option value="Garaż">Garaż</option>
 								</datalist>
-							</input>	
-							<input list="flor__selection" name="flors" class="flor__selection" placeholder="Do"></input>
-						</div>
-					</div>
-				</div>
-				<div class="firstline__group">
-					<div class="group__form">
-						<label for="rodzaj">Inwestycja</label>
-						<input list= "big__selector-invest" name= "big__selector" class="big__selector" placeholder="Inwestycja">
-							<datalist id="big__selector-invest">
-								<option value="Osiedle Plażowa">Osiedle Plażowa</option>
-								<option value="Apartamenty Alto">Apartamenty Alto</option>
-								<option value="Nowa Wygoda">Nowa Wygoda</option>
-								<option value="Wysoki Stoczek Apartamenty">Wysoki Stoczek Apartamenty</option>
-								<option value="Aleja Tysiąclecia Państwa Polskiego 54A">Aleja Tysiąclecia Państwa Polskiego 54A</option>
-								<option value="Willa Musica">Willa Musica</option>
-								<option value="Bitwy Białostockiej 35A">Bitwy Białostockiej 35A</option>
-								<option value="Kawaleryjska">Kawaleryjska</option>
-								<option value="Krakowska 7">Krakowska 7</option>
-								<option value="Stalowa">Stalowa</option>
-							</datalist>
-						</input>
-					</div>
-					<div class="group__form-florex">
-						<label for="od">Liczba pokoi</label>
-						<div class="column">
-							<input list="rooms" name="rooms" class="flor__selection" placeholder="Od">
-								<datalist id="rooms">
-									<option  value="1 pokój" class="small__small__selector">1 pokój</option>
-									<option  value="2 pokoje" class="small__small__selector">2 pokoje</option>
-									<option  value="3 pokoje" class="small__small__selector">3 pokoje</option>
-									<option  value="4 pokoje" class="small__small__selector">4 pokoje</option>
-									<option  value="5 pokoi" class="small__small__selector">5 pokoi</option>
-								</datalist>
-							</input>	
-							<input list="rooms" name="rooms" class="flor__selection" placeholder="Do">
-								<datalist id="ppp__selection">
 							</input>
 						</div>
-					</div>
-				</div>
-				<div class="firstline__group">
-					<div class="group__form-florex">
-						<label for="rodzaj">Cena</label>
+						<div class="group__form-florex">
+							<label for="total">Piętro</label>
 							<div class="column">
-								<input list="price" data-sufix="zł" name="price" class="flor__selection" placeholder="Od">
-								<datalist id="price" data-sufix="zł">
-									<option  value="50000" class="small__small__selector">50000</option>
-									<option  value="100000" class="small__small__selector">100000</option>
-									<option  value="150000" class="small__small__selector">150000</option>
-									<option  value="200000" class="small__small__selector">200000</option>
-									<option  value="250000" class="small__small__selector">250000</option>
-									<option  value="300000" class="small__small__selector">300000</option>
-									<option  value="350000" class="small__small__selector">350000</option>
-									<option  value="400000" class="small__small__selector">400000</option>
-									<option  value="450000" class="small__small__selector">450000</option>
-									<option  value="500000" class="small__small__selector">500000</option>
-									<option  value="750000" class="small__small__selector">750000</option>
-									<option  value="1000000" class="small__small__selector">1000000</option>
-									<option  value="1500000" class="small__small__selector">1500000</option>
-								</datalist>
-							</input>
-							<input list="price" name="price" class="flor__selection" placeholder="Do">
-								<datalist id="price"></datalist>
-							</input>
+									<input id="total" list="flor__selection" name="flors" class="flor__selection" placeholder="Od">
+									<datalist id="flor__selection">
+										<option  value="- 2 piętro" class="small__small__selector">- 2 piętro</option>
+										<option  value="- 1 piętro" class="small__small__selector">- 1 piętro</option>
+										<option  value="Parter" class="small__small__selector">Parter</option>
+										<option  value="1 piętro" class="small__small__selector">1 piętro</option>
+										<option  value="2 piętro" class="small__small__selector">2 piętro</option>
+										<option  value="3 piętro" class="small__small__selector">3 piętro</option>
+										<option  value="4 piętro" class="small__small__selector">4 piętro</option>
+										<option  value="5 piętro" class="small__small__selector">5 piętro</option>
+										<option  value="6 piętro" class="small__small__selector">6 piętro</option>
+										<option  value="7 piętro" class="small__small__selector">7 piętro</option>
+									</datalist>
+								</input>	
+								<input list="flor__selection" name="flors" class="flor__selection" placeholder="Do"></input>
+							</div>
 						</div>
 					</div>
-					<div class="group__form-florex">
-						<label for="Metraż">Metraż</label>
-						<div class="column">
-							<input list="mesure" name="mesure" class="flor__selection" placeholder="Od">
-								<datalist id="mesure">
-									<option  value="1m2" class="small__small__selector">1m2</option>
-									<option  value="25m2" class="small__small__selector">25m2</option>
-									<option  value="40m2" class="small__small__selector">40m2</option>
-									<option  value="50m2" class="small__small__selector">50m2</option>
-									<option  value="60m2" class="small__small__selector">60m2</option>
-									<option  value="70m2" class="small__small__selector">70m2</option>
-									<option  value="80m2" class="small__small__selector">80m2</option>
-									<option  value="100m2" class="small__small__selector">100m2</option>
-									<option  value="120m2" class="small__small__selector">120m2</option>
-									<option  value="150m2" class="small__small__selector">150m2</option>
-									<option  value="250m2" class="small__small__selector">250m2</option>
+					<div class="firstline__group">
+						<div class="group__form">
+							<label for="rodzaj">Inwestycja</label>
+							<input list= "big__selector-invest" name= "big__selector" class="big__selector" placeholder="Inwestycja">
+								<datalist id="big__selector-invest">
+									<option value="Osiedle Plażowa">Osiedle Plażowa</option>
+									<option value="Apartamenty Alto">Apartamenty Alto</option>
+									<option value="Nowa Wygoda">Nowa Wygoda</option>
+									<option value="Wysoki Stoczek Apartamenty">Wysoki Stoczek Apartamenty</option>
+									<option value="Aleja Tysiąclecia Państwa Polskiego 54A">Aleja Tysiąclecia Państwa Polskiego 54A</option>
+									<option value="Willa Musica">Willa Musica</option>
+									<option value="Bitwy Białostockiej 35A">Bitwy Białostockiej 35A</option>
+									<option value="Kawaleryjska">Kawaleryjska</option>
+									<option value="Krakowska 7">Krakowska 7</option>
+									<option value="Stalowa">Stalowa</option>
 								</datalist>
 							</input>
-							<input list="mesure" name="mesure" class="flor__selection" placeholder="Do">
-								<datalist id="mesure"></datalist>
-							</input>
+						</div>
+						<div class="group__form-florex">
+							<label for="od">Liczba pokoi</label>
+							<div class="column">
+								<input list="rooms" name="rooms" class="flor__selection" placeholder="Od">
+									<datalist id="rooms">
+										<option  value="1 pokój" class="small__small__selector">1 pokój</option>
+										<option  value="2 pokoje" class="small__small__selector">2 pokoje</option>
+										<option  value="3 pokoje" class="small__small__selector">3 pokoje</option>
+										<option  value="4 pokoje" class="small__small__selector">4 pokoje</option>
+										<option  value="5 pokoi" class="small__small__selector">5 pokoi</option>
+									</datalist>
+								</input>	
+								<input list="rooms" name="rooms" class="flor__selection" placeholder="Do">
+									<datalist id="ppp__selection">
+								</input>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="firstline__group find">
-					<div class="group__form-find">
-						<input type="checkbox">
-						<label for="Szukaj_mieszkań_w_promocji"> Szukaj mieszkań w promocji</label>
+					<div class="firstline__group">
+						<div class="group__form-florex">
+							<label for="rodzaj">Cena</label>
+								<div class="column">
+									<input list="price" data-sufix="zł" name="price" class="flor__selection" placeholder="Od">
+									<datalist id="price" data-sufix="zł">
+										<option  value="50000" class="small__small__selector">50000</option>
+										<option  value="100000" class="small__small__selector">100000</option>
+										<option  value="150000" class="small__small__selector">150000</option>
+										<option  value="200000" class="small__small__selector">200000</option>
+										<option  value="250000" class="small__small__selector">250000</option>
+										<option  value="300000" class="small__small__selector">300000</option>
+										<option  value="350000" class="small__small__selector">350000</option>
+										<option  value="400000" class="small__small__selector">400000</option>
+										<option  value="450000" class="small__small__selector">450000</option>
+										<option  value="500000" class="small__small__selector">500000</option>
+										<option  value="750000" class="small__small__selector">750000</option>
+										<option  value="1000000" class="small__small__selector">1000000</option>
+										<option  value="1500000" class="small__small__selector">1500000</option>
+									</datalist>
+								</input>
+								<input list="price" name="price" class="flor__selection" placeholder="Do">
+									<datalist id="price"></datalist>
+								</input>
+							</div>
+						</div>
+						<div class="group__form-florex">
+							<label for="Metraż">Metraż</label>
+							<div class="column">
+								<input list="mesure" name="mesure" class="flor__selection" placeholder="Od">
+									<datalist id="mesure">
+										<option  value="1m2" class="small__small__selector">1m2</option>
+										<option  value="25m2" class="small__small__selector">25m2</option>
+										<option  value="40m2" class="small__small__selector">40m2</option>
+										<option  value="50m2" class="small__small__selector">50m2</option>
+										<option  value="60m2" class="small__small__selector">60m2</option>
+										<option  value="70m2" class="small__small__selector">70m2</option>
+										<option  value="80m2" class="small__small__selector">80m2</option>
+										<option  value="100m2" class="small__small__selector">100m2</option>
+										<option  value="120m2" class="small__small__selector">120m2</option>
+										<option  value="150m2" class="small__small__selector">150m2</option>
+										<option  value="250m2" class="small__small__selector">250m2</option>
+									</datalist>
+								</input>
+								<input list="mesure" name="mesure" class="flor__selection" placeholder="Do">
+									<datalist id="mesure"></datalist>
+								</input>
+							</div>
+						</div>
 					</div>
-					<div class="group__form-find">
-						<button class="find__button">Szukaj</button>
+					<div class="firstline__group find">
+						<div class="group__form-find">
+							<input type="checkbox">
+							<label for="Szukaj_mieszkań_w_promocji"> Szukaj mieszkań w promocji</label>
+						</div>
+						<div class="group__form-find">
+							<button class="find__button">Szukaj</button>
+						</div>
 					</div>
-				</div>
-			</form>
-		</article>			
-		<article class="product">
+				</form>
+			</article>			
+		<main class="product">
+			<header class="product__header">
+				<h2 class="product__header-main-text">Inwestycje Białystok</h2>
+				<a class="product__header-text" href="#">	Wszystkie inwestycje</a>
+			</header>
 			<div class="product__container-four">
-				<div class="product__item">
-					<figure class="product__view-figure">
-						<img class="product__view-image" src="images/42pulkupiechoty.jpg" alt="42pulkupiechoty">
-						<figcaption class="product__view-figcaption">
-							Update your business card
-						</figcaption>
-					</figure>
-				</div>
-				<div class="product__item">
-					<figure class="product__view-figure">
-						<img class="product__view-image" src="images/alejatysiaclecia.JPG" alt="alejatysiaclecia">
-						<figcaption class="product__view-figcaption">
-								Retouch your favorite phots
-						</figcaption>
-					</figure>
-				</div>
-				<div class="product__item">
-					<figure class="product__view-figure">
-						<img class="product__view-image" src="images/bitwybialostockie.JPG" alt="bitwybialostockie">
-						<figcaption class="product__view-figcaption">
-							Vectorize your image
-						</figcaption>
-					</figure>
-				</div>
-				<div class="product__item">
-					<figure class="product__view-figure">
-						<img class="product__view-image" src="images/kawaleryjska.JPG" alt="kawaleryjska">
-						<figcaption class="product__view-figcaption">
-							Vectorize your image
-						</figcaption>
-					</figure>
-				</div>
+				<figure class="product__view-figure">
+					<img class="product__view-image" src="images/42pulkupiechoty.jpg" alt="42pulkupiechoty">
+					<figcaption class="product__view-figcaption">
+						Update your business card
+					</figcaption>
+				</figure>
+				<figure class="product__view-figure">
+					<img class="product__view-image" src="images/alejatysiaclecia.JPG" alt="alejatysiaclecia">
+					<figcaption class="product__view-figcaption">
+							Retouch your favorite phots
+					</figcaption>
+				</figure>
+				<figure class="product__view-figure">
+					<img class="product__view-image" src="images/bitwybialostockie.JPG" alt="bitwybialostockie">
+					<figcaption class="product__view-figcaption">
+						Vectorize your image
+					</figcaption>
+				</figure>
+				<figure class="product__view-figure">
+					<img class="product__view-image" src="images/kawaleryjska.JPG" alt="kawaleryjska">
+					<figcaption class="product__view-figcaption">
+						Vectorize your image
+					</figcaption>
+				</figure>
 			</div>
 			<div class="product__container-four">	
-				<div class="product__item">
-					<figure class="product__view-figure">
-						<img class="product__view-image" src="images/kawaleryjska2.JPG" alt="kawaleryjska2">
-						<figcaption class="product__view-figcaption">
-							Vectorize your image
-						</figcaption>
-					</figure>
-				</div>
-				<div class="product__item">
-					<figure class="product__view-figure">
-						<img class="product__view-image" src="images/plazowa.jpg" alt="plazowa">
-						<figcaption class="product__view-figcaption">
-							Vectorize your image
-						</figcaption>
-					</figure>
-				</div>
-				<div class="product__item">
-					<figure class="product__view-figure">
-						<img class="product__view-image" src="images/kawaleryjska2.JPG" alt="kawaleryjska2">
-						<figcaption class="product__view-figcaption">
-							Vectorize your image
-						</figcaption>
-					</figure>
-				</div>
-				<div class="product__item">
-					<figure class="product__view-figure">
-						<img class="product__view-image" src="images/kawaleryjska2.JPG" alt="kawaleryjska2">
-						<figcaption class="product__view-figcaption">
-							Vectorize your image
-						</figcaption>
-					</figure>
-				</div>
+				<figure class="product__view-figure">
+					<img class="product__view-image" src="images/kawaleryjska2.JPG" alt="kawaleryjska2">
+					<figcaption class="product__view-figcaption">
+						Vectorize your image
+					</figcaption>
+				</figure>
+				<figure class="product__view-figure">
+					<img class="product__view-image" src="images/plazowa.jpg" alt="plazowa">
+					<figcaption class="product__view-figcaption">
+						Vectorize your image
+					</figcaption>
+				</figure>
+				<figure class="product__view-figure">
+					<img class="product__view-image" src="images/kawaleryjska2.JPG" alt="kawaleryjska2">
+					<figcaption class="product__view-figcaption">
+						Vectorize your image
+					</figcaption>
+				</figure>
+				<figure class="product__view-figure">
+					<img class="product__view-image" src="images/kawaleryjska2.JPG" alt="kawaleryjska2">
+					<figcaption class="product__view-figcaption">
+						Vectorize your image
+					</figcaption>
+				</figure>
 			</div>
 			</div>
-		</article>	
+		</main>	
 		<section class="new__inwest">
 			<header>
 				<div></div>
