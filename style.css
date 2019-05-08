@@ -298,22 +298,29 @@ position: relative;
 .bif {
   width: 50px;
   height: 50px;
-  background-color: red
+  background-color: #d10a11;
+  position: relative;
 }
-.bif::after {
-  content: ""; 
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 10px 10px 0;
-  border-color: transparent transparent #d10a11 transparent;
-  position: absolute;
-}
+
 .bif::before {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+
+.bif::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 0;
+  border-color: transparent #d10a10 transparent transparent;
+  line-height: 0px;
+  position: absolute; 
+  left: 40px;
+  
   
 }
 
