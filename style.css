@@ -321,7 +321,6 @@ position: relative;
   position: absolute; 
   left: 40px;
   
-  
 }
 
 .fa {
@@ -342,4 +341,124 @@ position: relative;
 .news__container-core {
   width: 75%;
     padding: 20px 0;
+}
+
+.other {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.other__header {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  border-bottom: 1px grey solid;
+  margin-bottom: 15px;
+}
+
+.other__container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.other__container-box {
+  display: flex;
+  width: 48%;
+  
+}
+
+.other__container-mainbox {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  color: white;
+  background-color: #d10a10;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.other__main-text {
+  border-bottom: 2px #dcdbdb8c solid;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.other__link {
+  padding: 10px;
+  color: white;
+  background-color: #7e151a8f;
+  border: #7e151a8f;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.main__footer {
+  display: flex;
+  justify-content: center;
+  background-color: #f3f3f3;
+}
+
+.footer__container {
+  display: flex;
+  width: 90%;
+  padding: 40px 0;
+
+}
+
+.main__footer-box {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 0 10px;
+}
+.header__footer-box {
+  color: #7e151a
+}
+.main__footer-text {
+  word-break: break-all;
+}
+
+.footer__aside {
+  background-color: #2b2b2b;
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__aside-container {
+  width: 90%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__aside-link {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.footer__aside-text {
+  
+}
+
+.footer__aside-link::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width:  0 8px 8px 8px;
+  border-color: transparent #d10a10 transparent transparent;
+  line-height: 0px;
+  position: absolute; 
+  right: -10px;
+  top: 6px;
 }
