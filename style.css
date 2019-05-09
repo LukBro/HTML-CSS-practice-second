@@ -380,7 +380,7 @@ position: relative;
   color: white;
   background-color: #d10a10;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .other__main-text {
@@ -388,7 +388,7 @@ position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-bottom: 10px;
+  padding: 10px 0;
 }
 
 .other__link {
@@ -399,6 +399,12 @@ position: relative;
   font-weight: 700;
   text-decoration: none;
   font-size: 20px;
+}
+
+.other__contain-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .main__footer {
@@ -446,10 +452,6 @@ position: relative;
   position: relative;
 }
 
-.footer__aside-text {
-  
-}
-
 .footer__aside-link::after {
   content: "";
   width: 0;
@@ -459,6 +461,7 @@ position: relative;
   border-color: transparent #d10a10 transparent transparent;
   line-height: 0px;
   position: absolute; 
-  right: -10px;
-  top: 6px;
+  right: -15px;
+  top: 10px;
+  transform: rotate(-45deg);
 }
