@@ -132,6 +132,13 @@ html {
     width: 100%;
     
   }
+
+  @media (max-width: 643px) {
+    .navigation-items {
+      flex-direction: column;
+    }
+  }
+
   .nav__link-item {
     text-decoration: none;
     opacity: .6;
@@ -241,6 +248,7 @@ html {
     }
   }
 
+
  .product__header {
   display: flex;
   flex-direction: row;
@@ -300,6 +308,7 @@ html {
   .product__view-figure:nth-of-type(2n+1) {
     display: none;
   }
+  
 }
 
 .product__view-figcaption {
@@ -414,15 +423,32 @@ position: relative;
   width: 20%;
 }
 
+.news__container-core {
+  width: 75%;
+    padding: 20px 0;
+}
+
 @media (max-width: 770px) {
   .news__icon {
     display: none;
   }
+  .news__container-item:nth-of-type(2) {
+    display: none;
+  }
+  .news__container-item {
+    width: 50%;
+    justify-content: center
+  }
 }
 
-.news__container-core {
-  width: 75%;
-    padding: 20px 0;
+@media (max-width: 450px) {
+  .news__container-item:nth-of-type(1) {
+    display: none;
+  }
+  .news__container-item {
+    width: 100%;
+    justify-content: center
+  }
 }
 
 .other {
@@ -451,25 +477,35 @@ position: relative;
 .other__container-box {
   display: flex;
   width: 48%;
-  
 }
 
 .other__container-mainbox {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  height: 100%;
+  width: 50%;;
   color: white;
   background-color: #d10a10;
   align-items: center;
   justify-content: flex-start;
 }
 
+@media (max-width: 627px) {
+  .other__container-mainbox:nth-of-type(2) {
+  display: none;
+
+  }
+  .other__container-mainbox {
+    width: 100%
+  }
+}
+
+
 .other__main-text {
   border-bottom: 2px #dcdbdb8c solid;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
+  text-align: center;
   padding: 10px 0;
 }
 
@@ -480,7 +516,7 @@ position: relative;
   border: #7e151a8f;
   font-weight: 700;
   text-decoration: none;
-  font-size: 20px;
+  
 }
 
 .other__contain-link {
@@ -505,8 +541,15 @@ position: relative;
 .main__footer-box {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 33%;
   padding: 0 10px;
+  word-break: break-word;
+}
+
+@media (max-width: 770px) {
+  .main__footer-box {
+    width: 50%;
+  }
 }
 .header__footer-box {
   color: #7e151a
